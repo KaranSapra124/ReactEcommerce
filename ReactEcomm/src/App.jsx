@@ -9,6 +9,7 @@ import Products from "./Pages/Products";
 import ContactUs from "./Pages/ContactUs";
 import Cart from "./Pages/Cart";
 import AboutUs from "./Pages/AboutUs";
+import IndividualPage from "./Pages/IndividualPage";
 
 function App() {
   const appRoutes = createBrowserRouter([
@@ -35,6 +36,10 @@ function App() {
         {
           path: "/about",
           element: <AboutUs />,
+        },
+        {
+          path: "/product-page",
+          element: <IndividualPage />,
         },
       ],
     },
